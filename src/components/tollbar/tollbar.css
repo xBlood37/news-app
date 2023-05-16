@@ -1,0 +1,52 @@
+.tollbar {
+  background-color: #fff;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  border-radius: 20px;
+  height: fit-content;
+}
+.tollbar__list {
+  padding: 15px;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+}
+.tollbar__item {
+  width: 100px;
+}
+.tollbar__link {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: #000;
+  border-radius: 20px;
+}
+.tollbar__link:hover {
+  background-color: rgba(34, 60, 80, 0.2);
+}
+.tollbar__link--home::before,
+.tollbar__link--search::before,
+.tollbar__link--settings::before,
+.tollbar__link--favorite::before {
+  content: " ";
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-size: cover;
+}
+.tollbar__link--home::before {
+  background-image: url(../../img/home.svg);
+}
+.tollbar__link--search::before {
+  background-image: url(../../img/search.svg);
+}
+.tollbar__link--settings::before {
+  background-image: url(../../img/settings.svg);
+}
+.tollbar__link--favorite::before {
+  background-image: url(../../img/favorite.svg);
+}
